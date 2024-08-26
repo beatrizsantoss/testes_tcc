@@ -45,7 +45,27 @@ html {
     /* Bordas arredondadas */
     background-color: #EB3A11;
     /* Cor dos quadrados */
+    position: absolute;
+    display: flex;
+        flex-direction: column;
+            justify-content: center;
+                align-items: center;
+                    color: white; /* Cor do texto */
+                        font-size: 20px; /* Tamanho da fonte do h1 */
+                            text-align: center;
     margin: 10px; /* Margem ao redor de cada quadrado */
+}
+
+
+
+
+
+
+
+
+ .square h2 {
+   font-size: 14px; /* Tamanho da fonte do h2 */
+   margin: 0; /* Remove as margens padrão */
 }
 
 .square1 {
