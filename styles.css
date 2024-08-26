@@ -19,7 +19,7 @@ html {
     height: auto; /* Mantém a proporção da imagem */
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
     margin: 0; /* Remove possíveis margens */
-}
+} 
 
 .overlay {
     position: absolute;
