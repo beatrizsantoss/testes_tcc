@@ -15,7 +15,7 @@ html {
 
 .estrada {
     display: block; /* Remove espaços abaixo da imagem */
-    width: 100vw; /* Preenche toda a largura da viewport */
+    width: 100%; /* Preenche toda a largura da viewport */
     height: auto; /* Mantém a proporção da imagem */
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
     margin: 0; /* Remove possíveis margens */
@@ -25,15 +25,14 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    /* Distribui os quadrados horizontalmente */
     align-items: center;
-    /* Alinha os quadrados verticalmente */
     pointer-events: none;
-    /* Permite clicar na imagem por baixo se necessário */
+    margin-left: 20px; /* Margem à esquerda */
+    margin-right: 20px; /* Margem à direita */
     padding: 0 20px; /* Adiciona um pouco de padding ao redor da área de overlay */
 }
 
