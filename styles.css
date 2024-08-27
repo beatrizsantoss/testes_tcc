@@ -23,8 +23,15 @@ html {
 
 h1 {
     font-family: 'Arial', sans-serif;
+    
 }
 
+h2 {
+    font-family: 'Arial', sans-serif; /* Define a fonte */
+    font-weight: normal; /* Define o peso da fonte como normal */
+    font-size: 14px; /* Tamanho da fonte */
+    margin: 0; /* Remove margens */
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -43,7 +50,9 @@ h1 {
 .square {
     width: 30%;
     height: 60%;
+    padding-top: 5%; /* Mantém a proporção quadrada, usando padding-top para definir a altura */
     border-radius: 5px;
+    position: relative;
     background-color: #EB3A11;
     display: flex;
     flex-direction: column;
@@ -55,7 +64,7 @@ h1 {
 }
 
 .number {
-    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 4rem; /* Ajuste o tamanho da fonte conforme necessário */
     font-weight: bold;
     font-family: 'Arial', sans-serif;
       
