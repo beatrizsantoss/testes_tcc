@@ -1,3 +1,4 @@
+/* styles.css */
 body,
 html {
     margin: 0;
@@ -10,16 +11,19 @@ html {
     position: relative;
     width: 100%;
     height: auto;
-    /* Ajuste conforme necessário */
 }
 
 .estrada {
-    display: block; /* Remove espaços abaixo da imagem */
-    width: 100%; /* Preenche toda a largura da viewport */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
-    margin: 0; /* Remove possíveis margens */
-} 
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+}
 
 .overlay {
     position: absolute;
@@ -31,51 +35,33 @@ html {
     justify-content: space-between;
     align-items: center;
     pointer-events: none;
-    margin-left: 20px; /* Margem à esquerda */
-    margin-right: 20px; /* Margem à direita */
-    padding: 0 20px; /* Adiciona um pouco de padding ao redor da área de overlay */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 20px;
 }
 
 .square {
     width: 30%;
-    /* Largura dos quadrados */
     height: 60%;
-    /* Altura dos quadrados */
     border-radius: 5px;
-    /* Bordas arredondadas */
     background-color: #EB3A11;
-    /* Cor dos quadrados */
-    position: absolute;
     display: flex;
-        flex-direction: column;
-            justify-content: center;
-                align-items: center;
-                    color: white; /* Cor do texto */
-                        font-size: 20px; /* Tamanho da fonte do h1 */
-                            text-align: center;
-    margin: 10px; /* Margem ao redor de cada quadrado */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 10px;
 }
 
-
-
-
-
-
-
-
- .square h2 {
-   font-size: 14px; /* Tamanho da fonte do h2 */
-   margin: 0; /* Remove as margens padrão */
+.number {
+    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+      
 }
 
-.square1 {
-    /* Estilo específico para square1 se necessário */
-}
-
-.square2 {
-    /* Estilo específico para square2 se necessário */
-}
-
-.square3 {
-    /* Estilo específico para square3 se necessário */
+.square h2 {
+    font-size: 24px;
+    margin: 0;
 }
