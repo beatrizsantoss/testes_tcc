@@ -74,3 +74,40 @@ h2 {
     font-size: 24px;
     margin: 0;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 475px;
+    height: 624px;
+}
+
+.quadrado {
+    width: 305px;
+    height: 405px;
+    background-color: #E24B1B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -4;
+    border-radius: 20px; 
+}
+
+.imagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    width: 300px; 
+    height: auto;
+}
+
