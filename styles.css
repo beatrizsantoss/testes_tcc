@@ -8,34 +8,12 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
 }
-
-.container {
-    position: relative;
-    width: 475px;
-    height: 624px;
-    
-}
-
-.quadrado {
-    width: 305px;
-    height: 405px;
-    background-color: #EB3A11;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: -4;
-    border-radius: 20px; 
-}
-
-.imagem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 544px; 
-    height: auto;
-    left: -50px; /* Move a imagem 20 pixels para a esquerda */
-    
-    
-      
-}
-
+.titulo {
+    text-align: center;
+    max-width: 800px; 
+    font-family: 'Montserrat', sans-serif; 
+    color: #333;
+    font-size: 24px;
+    line-height: 1.5; 
+    margin: 100;
+  }
