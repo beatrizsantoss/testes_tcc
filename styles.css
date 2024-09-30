@@ -5,7 +5,8 @@ body {
 }
 
 .carrossel {
-    width: 1920px; /* Largura fixa de 1920px */
+    width: 1900px; /* Largura fixa de 1920px */
+    height: 600px; 
     position: relative;
     overflow: hidden;
     border: 2px solid #ccc;
