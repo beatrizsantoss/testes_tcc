@@ -1,26 +1,19 @@
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    function animateNumber(id, start, end, duration) {
-        const numberElement = document.getElementById(id);
-        let count = start;
-        const interval = 50; // Atualiza a cada 50 milissegundos
-        const steps = Math.floor(duration / interval);
-        const stepValue = (end - start) / steps;
+let index = 0;
 
-        function updateNumber() {
-            count += stepValue;
-            if (count >= end) {
-                count = end;
-                clearInterval(intervalId);
-            }
-            numberElement.textContent = Math.floor(count).toString().padStart(2, '0');
-        }
+const items = document.querySelectorAll('.carrossel-item');
+const totalItems = items.length;
 
-        const intervalId = setInterval(updateNumber, interval);
-    }
-
-    // Exemplo de animação para diferentes elementos
-    animateNumber('number1', 0, 100, 7000); // 7 segundos para ir de 00 a 100:00
-    animateNumber('number2', 0, 100, 7000); // 7 segundos para ir de 00:00 a 100:00
-    animateNumber('number3', 0, 100, 7000); // 7 segundos para ir de 00:00 a 100:00
+document.querySelector('.next').addEventListener('click', () => {
+    index = (index + 1) % totalItems;
+    updateCarousel();
 });
+
+document.querySelector('.prev').addEventListener('click', () => {
+    index = (index - 1 + totalItems) % totalItems;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    const newTransformValue = -index * 897; // Largura do carrossel
+    document.querySelector('.carrossel-inner').style.transform = `translateX(${newTransformValue}px)`;
+}
