@@ -3,7 +3,6 @@ body {
     margin: 0;
     background-color: #f4f4f4;
 }
-
 .carrossel {
     width: 1900px; /* Largura fixa de 1920px */
     height: 600px; 
@@ -16,7 +15,7 @@ body {
 
 .carrossel-inner {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease; /*/*
 }
 
 .carrossel-item {
