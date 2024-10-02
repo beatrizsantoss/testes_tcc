@@ -4,7 +4,7 @@ body {
     background-color: #f4f4f4;
 }
 .carrossel {
-    width: 1900px; /* Largura fixa de 1920px */
+    width: 1300px; /* Largura fixa de 1920px */
     height: 600px; 
     position: relative;
     overflow: hidden;
@@ -15,11 +15,11 @@ body {
 
 .carrossel-inner {
     display: flex;
-    transition: transform 0.5s ease; /*/*
+    transition: transform 0.5s ease; 
 }
 
 .carrossel-item {
-    min-width: 1920px; /* Largura de cada item igual a do carrossel */
+    min-width: 1920px;  /*Largura de cada item igual a do carrossel */
     box-sizing: border-box;
 }
 
@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
 }
 
-button {
+.button1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

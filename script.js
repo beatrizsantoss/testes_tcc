@@ -14,6 +14,6 @@ document.querySelector('.prev').addEventListener('click', () => {
 });
 
 function updateCarousel() {
-    const newTransformValue = -index * 1920; // Largura do carrossel
+    const newTransformValue = -index * 1300; // Largura do carrossel
     document.querySelector('.carrossel-inner').style.transform = `translateX(${newTransformValue}px)`;
 }
