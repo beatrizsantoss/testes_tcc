@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrossel</title>
+    <title>Acessibilidade</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="carrossel">
-        <div class="carrossel-inner">
-            <div class="carrossel-item ativo">
-                <img src="img/caminhaonovo.png" alt="Imagem 1">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/caminhao1novo.png" alt="Imagem 2">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/caminhaonovo.png" alt="Imagem 3">
-            </div>
-            <div class="carrossel-item">
-                <img src="img/caminhao1novo.png" alt="Imagem 4">
-            </div>
+    <div class="container">
+        <h1>Texto de Exemplo</h1>
+        <p>Esse é um parágrafo de exemplo. Você pode aumentar ou diminuir o tamanho da fonte e mudar o modo de exibição.</p>
+        
+        <div class="controls">
+            <button id="increaseFont">
+                <img src="icon-plus.png" alt="Aumentar Fonte">
+            </button>
+            <button id="decreaseFont">
+                <img src="icon-minus.png" alt="Diminuir Fonte">
+            </button>
+            <button id="toggleMode">
+                <img src="icon-darkmode.png" alt="Modo Escuro">
+            </button>
         </div>
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

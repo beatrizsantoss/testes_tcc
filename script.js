@@ -1,19 +1,20 @@
-let index = 0;
+let fontSize = 16;
 
-const items = document.querySelectorAll('.carrossel-item');
-const totalItems = items.length;
-
-document.querySelector('.next').addEventListener('click', () => {
-    index = (index + 1) % totalItems;
-    updateCarousel();
+document.getElementById('increaseFont').addEventListener('click', () => {
+    fontSize += 2;
+    document.body.style.fontSize = fontSize + 'px';
 });
 
-document.querySelector('.prev').addEventListener('click', () => {
-    index = (index - 1 + totalItems) % totalItems;
-    updateCarousel();
+document.getElementById('decreaseFont').addEventListener('click', () => {
+    if (fontSize > 10) { // Limita o tamanho mínimo
+        fontSize -= 2;
+        document.body.style.fontSize = fontSize + 'px';
+    }
 });
 
-function updateCarousel() {
-    const newTransformValue = -index * 1300; // Largura do carrossel
-    document.querySelector('.carrossel-inner').style.transform = `translateX(${newTransformValue}px)`;
-}
+document.getElementById('toggleMode').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const modeButton = document.getElementById('toggleMode');
+    modeButton.querySelector('img').alt = 
+        modeButton.querySelector('img').alt === 'Modo Escuro' ? 'Modo Claro' : 'Modo Escuro';
+});
