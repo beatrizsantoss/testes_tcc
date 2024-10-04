@@ -10,7 +10,7 @@ body {
 }
 
 .controls {
-    position: fixed; /* Mantém os botões fixos na tela */
+    position: fixed; /* Mantém os botões fixos na telagg */
     bottom: 40%; /* Distância do fundo */
     right: 40px; /* Distância da direita */
     display: flex; /* Usar flexbox */
